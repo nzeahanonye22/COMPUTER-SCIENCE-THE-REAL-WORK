@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the many paths of Computer Science through interactive demos, practical learning and real-world examples.">
+  <title>Computer Science — The Real Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    Computer Science is bigger than you think. Start exploring.
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Computer Science The Real Work home">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span class="brand-name">COMPUTER SCIENCE<span>THE REAL WORK</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#paths">Explore Paths</a>
+      <a class="nav-link" href="#demos">Live Demos</a>
+      <a class="nav-link" href="#learning">Learning Hub</a>
+      <a class="nav-link" href="#everyday">Real Life</a>
+      <a class="nav-link" href="#careers">Careers</a>
+      <a class="nav-link" href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>✦</span> YOUR JOURNEY INTO TECHNOLOGY STARTS HERE</div>
+        <h1>So, you think<br>Computer Science<br>is just <span class="highlight-word">coding?</span></h1>
+        <p class="hero-text">Think bigger. Explore the ideas, people and technologies changing the world — and discover where you fit in.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#paths">Explore the paths <span>↗</span></a>
+          <a class="button button-secondary" href="#demos">Try a live demo <span>▷</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack"><span>⌘</span><span>✳</span><span>⌁</span></div>
+          <p><strong>Curiosity first.</strong><br><span>No experience needed.</span></p>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a computer screen showing colorful technology symbols">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="floating-card card-code"><span class="mini-label">BUILD</span><b>&lt;hello_world&gt;</b><small>Make an idea real.</small></div>
+        <div class="floating-card card-ai"><span class="mini-icon">✳</span><b>AI</b><small>Teach machines.</small></div>
+        <div class="floating-card card-data"><span class="bars"><i></i><i></i><i></i><i></i><i></i></span><b>DATA</b><small>Find the story.</small></div>
+        <div class="hero-screen">
+          <div class="screen-top"><span></span><span></span><span></span><small>your-next-big-idea.dev</small></div>
+          <div class="screen-content">
+            <div class="screen-sidebar"><i></i><i></i><i></i><i></i></div>
+            <div class="screen-main">
+              <span class="screen-kicker">WELCOME TO THE FUTURE</span>
+              <div class="screen-heading">Imagine.<br><em>Explore.</em><br>Build.</div>
+              <div class="screen-button"></div>
+              <div class="screen-lines"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✳</div><div class="spark spark-c">✧</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Computer Science fields">
+      <div class="ticker-track"><span>SOFTWARE DEVELOPMENT</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>CYBERSECURITY</span><b>✳</b><span>DATA SCIENCE</span><b>✳</b><span>ROBOTICS</span><b>✳</b><span>SOFTWARE DEVELOPMENT</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>CYBERSECURITY</span><b>✳</b></div>
+    </section>
+
+    <section class="section-wrap section-block" id="paths">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span>01 / FIND YOUR DIRECTION</span></div><h2>There is more than<br>one way to <span class="underline-scribble">think tech.</span></h2></div>
+        <p>Computer Science is a whole universe of possibilities. Explore a path, see what people in that field do, and find something that sparks your curiosity.</p>
+      </div>
+      <div class="path-grid" id="pathGrid">
+        <article class="path-card path-blue" data-path="software"><div class="path-top"><span class="path-icon">⌨</span><span class="path-number">01</span></div><h3>Software Development</h3><p>Turn ideas into websites, mobile apps and useful software.</p><div class="path-tags"><span>HTML</span><span>JavaScript</span><span>Python</span></div><button class="text-button path-detail" data-detail="software">Explore this path ↗</button></article>
+        <article class="path-card path-pink" data-path="cyber"><div class="path-top"><span class="path-icon">♢</span><span class="path-number">02</span></div><h3>Cybersecurity</h3><p>Protect people, systems and information from digital threats.</p><div class="path-tags"><span>Security</span><span>Networks</span><span>Ethics</span></div><button class="text-button path-detail" data-detail="cyber">Explore this path ↗</button></article>
+        <article class="path-card path-yellow" data-path="ai"><div class="path-top"><span class="path-icon">✳</span><span class="path-number">03</span></div><h3>Artificial Intelligence</h3><p>Build systems that learn patterns and help solve problems.</p><div class="path-tags"><span>Python</span><span>Machine learning</span></div><button class="text-button path-detail" data-detail="ai">Explore this path ↗</button></article>
+        <article class="path-card path-green" data-path="data"><div class="path-top"><span class="path-icon">▥</span><span class="path-number">04</span></div><h3>Data Science</h3><p>Use data to answer questions and uncover useful insights.</p><div class="path-tags"><span>Statistics</span><span>Python</span><span>Charts</span></div><button class="text-button path-detail" data-detail="data">Explore this path ↗</button></article>
+        <article class="path-card path-purple" data-path="network"><div class="path-top"><span class="path-icon">⌘</span><span class="path-number">05</span></div><h3>Networking</h3><p>Connect devices so information can move around the world.</p><div class="path-tags"><span>Internet</span><span>Routers</span><span>Protocols</span></div><button class="text-button path-detail" data-detail="network">Explore this path ↗</button></article>
+        <article class="path-card path-orange" data-path="cloud"><div class="path-top"><span class="path-icon">☁</span><span class="path-number">06</span></div><h3>Cloud Computing</h3><p>Run services and store information using remote computers.</p><div class="path-tags"><span>Cloud</span><span>Servers</span><span>DevOps</span></div><button class="text-button path-detail" data-detail="cloud">Explore this path ↗</button></article>
+        <article class="path-card path-cyan" data-path="game"><div class="path-top"><span class="path-icon">✣</span><span class="path-number">07</span></div><h3>Game Development</h3><p>Create the games, worlds and experiences people love to play.</p><div class="path-tags"><span>Logic</span><span>Graphics</span><span>Design</span></div><button class="text-button path-detail" data-detail="game">Explore this path ↗</button></article>
+        <article class="path-card path-lilac" data-path="robotics"><div class="path-top"><span class="path-icon">⚙</span><span class="path-number">08</span></div><h3>Robotics</h3><p>Combine code and machines to make useful things move.</p><div class="path-tags"><span>Sensors</span><span>Code</span><span>Electronics</span></div><button class="text-button path-detail" data-detail="robotics">Explore this path ↗</button></article>
+        <article class="path-card path-peach" data-path="ux"><div class="path-top"><span class="path-icon">✎</span><span class="path-number">09</span></div><h3>UI/UX Design</h3><p>Make digital products easier and more enjoyable to use.</p><div class="path-tags"><span>Research</span><span>Design</span><span>Prototypes</span></div><button class="text-button path-detail" data-detail="ux">Explore this path ↗</button></article>
+        <article class="path-card path-slate" data-path="database"><div class="path-top"><span class="path-icon">▤</span><span class="path-number">10</span></div><h3>Database Management</h3><p>Organize, protect and retrieve information reliably.</p><div class="path-tags"><span>SQL</span><span>Data</span><span>Storage</span></div><button class="text-button path-detail" data-detail="database">Explore this path ↗</button></article>
+      </div>
+    </section>
+
+    <section class="detail-band" id="pathDetail" hidden>
+      <div class="section-wrap detail-inner"><div><span class="eyebrow">PATH SPOTLIGHT</span><h2 id="detailTitle">Explore a path</h2><p id="detailDescription"></p></div><div class="detail-facts"><div><b>What you might do</b><p id="detailWork"></p></div><div><b>Good first steps</b><p id="detailSteps"></p></div><div><b>Tools to explore</b><p id="detailTools"></p></div></div><button class="close-detail" id="closeDetail" aria-label="Close path details">×</button></div>
+    </section>
+
+    <section class="demo-section section-block" id="demos">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span>02 / LEARN BY DOING</span></div><h2>Don't just read it.<br><span class="highlight-word">Try it.</span></h2></div>
+          <p>Small experiments can make big ideas easier to understand. Try these beginner-friendly demonstrations right here.</p>
+        </div>
+        <div class="demo-grid">
+          <article class="demo-card demo-code">
+            <div class="demo-heading"><span class="demo-icon">〈/〉</span><span class="demo-label">WEB DEVELOPMENT</span></div>
+            <h3>Make a tiny webpage</h3><p>Change the words and color. See how a little code changes a page.</p>
+            <label for="demoMessage">Your headline</label><input id="demoMessage" type="text" value="Hello, future developer!" maxlength="55">
+            <label for="demoColor">Choose a color</label><input id="demoColor" type="color" value="#6d4aff">
+            <div class="browser-preview"><div class="browser-dots"><i></i><i></i><i></i></div><div class="preview-content" id="webPreview"><strong>Hello, future developer!</strong><span>You just changed a webpage.</span></div></div>
+            <span class="demo-foot">You are changing HTML content and CSS styling.</span>
+          </article>
+          <article class="demo-card demo-security">
+            <div class="demo-heading"><span class="demo-icon">♢</span><span class="demo-label">CYBERSECURITY</span></div>
+            <h3>Check a sample password</h3><p>Learn what makes a password stronger. Do not enter a real password here.</p>
+            <label for="passwordSample">Try a sample password</label><div class="password-row"><input id="passwordSample" type="password" placeholder="Try: BlueSky!2026"><button id="togglePassword" aria-label="Show password">Show</button></div>
+            <div class="strength-track"><span id="strengthBar"></span></div><div class="strength-result" id="strengthResult">Waiting for a sample password</div>
+            <ul class="security-tips" id="securityTips"><li>Use a longer passphrase</li><li>Mix different character types</li><li>Avoid personal information</li></ul>
+            <span class="demo-foot">This checker runs only in your browser and does not save input.</span>
+          </article>
+          <article class="demo-card demo-data">
+            <div class="demo-heading"><span class="demo-icon">▥</span><span class="demo-label">DATA SCIENCE</span></div>
+            <h3>Turn numbers into a story</h3><p>These sample votes show which technology topic visitors are curious about.</p>
+            <div class="chart" aria-label="Sample interest chart"><div class="chart-row"><span>Artificial Intelligence</span><div><i style="width:88%"></i></div><b>44</b></div><div class="chart-row"><span>Cybersecurity</span><div><i style="width:66%"></i></div><b>33</b></div><div class="chart-row"><span>Web Development</span><div><i style="width:52%"></i></div><b>26</b></div><div class="chart-row"><span>Robotics</span><div><i style="width:30%"></i></div><b>15</b></div></div>
+            <span class="demo-foot">Sample data for learning — not a real survey.</span>
+          </article>
+          <article class="demo-card demo-network">
+            <div class="demo-heading"><span class="demo-icon">⌘</span><span class="demo-label">NETWORKING</span></div>
+            <h3>Send a message across a network</h3><p>Follow a message as it travels from your device to a website.</p>
+            <div class="network-map"><div class="network-node" id="nodeDevice"><span>▣</span><b>Your device</b></div><div class="network-line"><i id="packet"></i></div><div class="network-node" id="nodeServer"><span>▤</span><b>Web server</b></div></div>
+            <div class="network-status" id="networkStatus">Ready to send a sample message.</div>
+            <button class="button button-primary button-small" id="sendPacket">Send a message <span>→</span></button>
+            <span class="demo-foot">A simplified illustration of a network request.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="learning">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span>03 / YOUR LEARNING CORNER</span></div><h2>Little notes.<br><span class="underline-scribble">Big beginnings.</span></h2></div>
+        <p>Pick a sticky note and take your first step. These learning cards are starting points, not a race. Learn at your own pace.</p>
+      </div>
+      <div class="learning-toolbar"><div class="filter-buttons" id="courseFilters"><button class="filter-button selected" data-filter="all">All courses</button><button class="filter-button" data-filter="Beginner">Beginner</button><button class="filter-button" data-filter="Intermediate">Intermediate</button></div><span id="courseCount">8 learning notes</span></div>
+      <div class="notes-grid" id="notesGrid">
+        <article class="sticky-note note-yellow" data-level="Beginner"><span class="note-pin"></span><span class="note-category">WEB DEVELOPMENT</span><h3>HTML: Build your first page</h3><p>Learn the building blocks that give a webpage its structure.</p><div class="note-meta"><span>Beginner</span><span>⏱ 2–3 hours</span></div><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website" target="_blank" rel="noopener">Start learning ↗</a></article>
+        <article class="sticky-note note-pink" data-level="Beginner"><span class="note-pin"></span><span class="note-category">WEB DEVELOPMENT</span><h3>CSS: Give pages a style</h3><p>Explore colors, spacing, layouts and responsive design.</p><div class="note-meta"><span>Beginner</span><span>⏱ 3–4 hours</span></div><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics" target="_blank" rel="noopener">Start learning ↗</a></article>
+        <article class="sticky-note note-blue" data-level="Beginner"><span class="note-pin"></span><span class="note-category">PROGRAMMING</span><h3>Python for beginners</h3><p>Write simple instructions and learn programming fundamentals.</p><div class="note-meta"><span>Beginner</span><span>⏱ 4–6 hours</span></div><a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener">Start learning ↗</a></article>
+        <article class="sticky-note note-green" data-level="Beginner"><span class="note-pin"></span><span class="note-category">PROGRAMMING</span><h3>JavaScript essentials</h3><p>Make webpages respond to clicks, input and user actions.</p><div class="note-meta"><span>Beginner</span><span>⏱ 4–6 hours</span></div><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting" target="_blank" rel="noopener">Start learning ↗</a></article>
+        <article class="sticky-note note-purple" data-level="Intermediate"><span class="note-pin"></span><span class="note-category">CYBERSECURITY</span><h3>Cybersecurity foundations</h3><p>Understand threats, safe habits and basic security concepts.</p><div class="note-meta"><span>Intermediate</span><span>⏱ 5–7 hours</span></div><a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener">Start learning ↗</a></article>
+        <article class="sticky-note note-orange" data-level="Intermediate"><span class="note-pin"></span><span class="note-category">NETWORKING</span><h3>How computer networks work</h3><p>Discover devices, IP addresses, routers and the internet.</p><div class="note-meta"><span>Intermediate</span><span>⏱ 4–5 hours</span></div><a href="https://www.cloudflare.com/learning/network-layer/what-is-a-computer-network/" target="_blank" rel="noopener">Start learning ↗</a></article>
+        <article class="sticky-note note-cyan" data-level="Beginner"><span class="note-pin"></span><span class="note-category">DATA</span><h3>Data and databases</h3><p>Learn how information is stored, organized and retrieved.</p><div class="note-meta"><span>Beginner</span><span>⏱ 3–4 hours</span></div><a href="https://sqlbolt.com/" target="_blank" rel="noopener">Start learning ↗</a></article>
+        <article class="sticky-note note-peach" data-level="Intermediate"><span class="note-pin"></span><span class="note-category">ARTIFICIAL INTELLIGENCE</span><h3>AI and machine learning</h3><p>Get a friendly introduction to how computers learn patterns.</p><div class="note-meta"><span>Intermediate</span><span>⏱ 5–7 hours</span></div><a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener">Start learning ↗</a></article>
+      </div>
+      <p class="resource-note">Learning links lead to external educational resources. Course times are rough estimates.</p>
+    </section>
+
+    <section class="everyday-section section-block" id="everyday">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span>04 / LOOK AROUND YOU</span></div><h2>Computer Science<br>is already in <span class="highlight-word">your day.</span></h2></div>
+          <p>Technology is not hiding in a laboratory. It is part of ordinary life. Select an activity to reveal the Computer Science behind it.</p>
+        </div>
+        <div class="life-layout">
+          <div class="life-list" id="lifeList">
+            <button class="life-item active" data-life="bank"><span class="life-emoji">🏧</span><span><b>Using an ATM</b><small>Banking and transactions</small></span><span class="life-arrow">↗</span></button>
+            <button class="life-item" data-life="chat"><span class="life-emoji">💬</span><span><b>Sending a message</b><small>Networks and encryption</small></span><span class="life-arrow">↗</span></button>
+            <button class="life-item" data-life="maps"><span class="life-emoji">🗺️</span><span><b>Finding your way</b><small>GPS and algorithms</small></span><span class="life-arrow">↗</span></button>
+            <button class="life-item" data-life="stream"><span class="life-emoji">🎬</span><span><b>Watching a show</b><small>Data and recommendation systems</small></span><span class="life-arrow">↗</span></button>
+            <button class="life-item" data-life="shop"><span class="life-emoji">🛍️</span><span><b>Shopping online</b><small>Websites and databases</small></span><span class="life-arrow">↗</span></button>
+          </div>
+          <div class="life-explainer"><div class="life-big-emoji" id="lifeEmoji">🏧</div><span class="eyebrow">THE TECHNOLOGY BEHIND IT</span><h3 id="lifeTitle">That ATM is a computer system.</h3><p id="lifeDescription">When you withdraw cash, software checks your request, communicates with banking systems, verifies information and updates records.</p><div class="life-tags" id="lifeTags"><span>Software</span><span>Networking</span><span>Databases</span><span>Security</span></div></div>
+        </div>
+        <div class="local-callout"><span class="local-icon">🇳🇬</span><div><b>Technology around Nigeria</b><p>Explore how Computer Science supports mobile banking, POS payments, ride-hailing, telecommunications, online learning and local businesses.</p></div><span class="local-star">✳</span></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="careers">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span>05 / WHERE CAN IT TAKE YOU?</span></div><h2>Different skills.<br><span class="underline-scribble">Real-world impact.</span></h2></div>
+        <p>Computer Science can lead to many kinds of work. Here are a few roles and the problems people in those roles help solve.</p>
+      </div>
+      <div class="career-grid">
+        <article class="career-card"><span>👩🏽‍💻</span><h3>Software Engineer</h3><p>Designs, builds and maintains software people use.</p></article>
+        <article class="career-card"><span>🛡️</span><h3>Cybersecurity Analyst</h3><p>Helps organizations identify and reduce digital risks.</p></article>
+        <article class="career-card"><span>📊</span><h3>Data Scientist</h3><p>Studies data to find patterns and support decisions.</p></article>
+        <article class="career-card"><span>🧠</span><h3>Artificial Intelligence Engineer</h3><p>Develops systems that learn from information.</p></article>
+        <article class="career-card"><span>☁️</span><h3>Cloud Engineer</h3><p>Builds and manages services that run online.</p></article>
+        <article class="career-card"><span>🎮</span><h3>Game Developer</h3><p>Creates the code and systems behind games.</p></article>
+      </div>
+      <div class="day-callout"><div><span class="eyebrow">A CAREER IS A HUMAN STORY</span><h3>A day in the life of a Computer Scientist.</h3><p>There is no single routine. Some people solve security problems, some build products, some study data, and others work with people to make technology more useful.</p></div><div class="day-stamp">CURIOUS<br>MINDS<br><span>MAKE</span><br>THINGS.</div></div>
+    </section>
+
+    <section class="quiz-section section-block" id="discover">
+      <div class="section-wrap quiz-wrap">
+        <div><div class="eyebrow"><span>06 / A LITTLE SELF-DISCOVERY</span></div><h2>Not sure where<br>to start? <span class="highlight-word">Let's find out.</span></h2><p>Choose what sounds most interesting. This quick quiz suggests a few paths you might enjoy exploring.</p></div>
+        <div class="quiz-card">
+          <span class="quiz-step" id="quizStep">QUESTION 1 OF 3</span><h3 id="quizQuestion">What sounds most exciting to you?</h3>
+          <div class="quiz-options" id="quizOptions">
+            <button data-answer="building">Building apps and websites</button><button data-answer="protecting">Protecting people and information</button><button data-answer="patterns">Finding patterns and solving puzzles</button><button data-answer="designing">Designing creative experiences</button>
+          </div>
+          <div class="quiz-result" id="quizResult" hidden><span class="result-spark">✳</span><b id="resultTitle">Your suggested paths</b><p id="resultText"></p><button class="text-button" id="restartQuiz">Try again ↻</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block myth-section">
+      <div class="section-heading"><div><div class="eyebrow"><span>07 / LET'S CLEAR THINGS UP</span></div><h2>Myth vs <span class="highlight-word">reality.</span></h2></div><p>There are plenty of misconceptions about Computer Science. Let's separate the myths from what is actually true.</p></div>
+      <div class="myth-grid"><div class="myth-card"><span>MYTH 01</span><p>"Computer Science is only about coding."</p><b>REALITY</b><p>It also includes data, people, design, networks, security, theory and much more.</p></div><div class="myth-card"><span>MYTH 02</span><p>"You must know everything before you start."</p><b>REALITY</b><p>Every expert was once a beginner. Learning happens one step at a time.</p></div><div class="myth-card"><span>MYTH 03</span><p>"Computer Scientists only work with computers."</p><b>REALITY</b><p>They help solve problems in healthcare, education, transport, finance and many other fields.</p></div></div>
+    </section>
+
+    <section class="community-section section-block" id="about">
+      <div class="section-wrap community-inner">
+        <div><div class="eyebrow"><span>08 / THE BIGGER PICTURE</span></div><h2>Discover.<br>Experience.<br><span>Build something.</span></h2><p>Whether you are a student choosing a direction or simply curious about technology, there is a place for you here.</p><a href="#paths" class="button button-light">Start exploring <span>↗</span></a></div>
+        <div class="community-art"><div class="community-circle">CS</div><span class="bubble bubble-one">IDEAS</span><span class="bubble bubble-two">PEOPLE</span><span class="bubble bubble-three">POSSIBILITY</span><span class="bubble bubble-four">✳</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span class="brand-name">COMPUTER SCIENCE<span>THE REAL WORK</span></span></a><p>Beyond the classroom. Into the world of technology.</p><a href="#home" class="back-top">Back to top ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Computer Science — The Real Work</span><span>Made for the curious. Built for beginners.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
